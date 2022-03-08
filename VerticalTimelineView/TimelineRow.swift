@@ -13,6 +13,7 @@ class TimelineRow: UIView {
     @IBOutlet weak var rowTitle: UILabel!
     @IBOutlet weak var rowDescription: UILabel!
     @IBOutlet weak var statusIconImageview: UIImageView!
+    var isComplete: Bool = false // Display filled or empty circle depending on the status
     var isLast: Bool = false // Do not draw the dotted line for the last row
 
     // For loading from storyboard
@@ -25,6 +26,14 @@ class TimelineRow: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.loadNibContent()
+    }
+    
+    func assignStatusImages() {
+        if self.isComplete {
+            statusIconImageview.image = UIImage(systemName: "circle.inset.filled")
+        } else {
+            statusIconImageview.image = UIImage(systemName: "circle")
+        }
     }
     
     private func loadNibContent() {
@@ -50,6 +59,8 @@ class TimelineRow: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        self.assignStatusImages()
+        
         if !isLast {
             self.drawConnectingLine()
         }
@@ -57,7 +68,7 @@ class TimelineRow: UIView {
     
     func drawConnectingLine() {
         let renderer = UIGraphicsImageRenderer(bounds: self.bounds)
-        let pattern: [CGFloat] = [6,4] // Draw a dotted line
+        let pattern: [CGFloat] = [4,4] // Draw a dotted line
         
         backgroundImageview.image = renderer.image { ctx in
             ctx.cgContext.setLineDash(phase: 0, lengths: pattern)

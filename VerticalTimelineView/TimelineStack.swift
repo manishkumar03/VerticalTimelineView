@@ -48,6 +48,7 @@ class TimelineStack: UIView {
         if let timelineInputData = self.timelineInputData {
             for (idx, timelineRowModel) in timelineInputData.enumerated() {
                 let timelineRow = TimelineRow()
+                timelineRow.isComplete = timelineRowModel.isComplete
                 timelineRow.rowDate.text = timelineRowModel.date
                 timelineRow.rowTitle.text = timelineRowModel.title
                 timelineRow.rowDescription.text = timelineRowModel.description

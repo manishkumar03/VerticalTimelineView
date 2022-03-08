@@ -32,6 +32,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timelineStack.layer.borderWidth = 1
+        timelineStack.layer.borderColor = UIColor.lightGray.cgColor
         timelineStack.timelineInputData = self.timelineInputData
     }
 }
