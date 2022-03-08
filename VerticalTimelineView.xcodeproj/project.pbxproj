@@ -13,6 +13,11 @@
 		13F7F17427D47A32008875FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F7F17227D47A32008875FC /* Main.storyboard */; };
 		13F7F17627D47A33008875FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F7F17527D47A33008875FC /* Assets.xcassets */; };
 		13F7F17927D47A33008875FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F7F17727D47A33008875FC /* LaunchScreen.storyboard */; };
+		13F7F18127D47A8C008875FC /* TimelineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7F18027D47A8C008875FC /* TimelineRow.swift */; };
+		13F7F18327D47A9C008875FC /* TimelineRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13F7F18227D47A9C008875FC /* TimelineRow.xib */; };
+		13F7F18527D47EB6008875FC /* TimelineStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7F18427D47EB6008875FC /* TimelineStack.swift */; };
+		13F7F18727D47EC4008875FC /* TimelineStack.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13F7F18627D47EC4008875FC /* TimelineStack.xib */; };
+		13F7F18927D47F64008875FC /* TimelineRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7F18827D47F64008875FC /* TimelineRowModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		13F7F17527D47A33008875FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13F7F17827D47A33008875FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13F7F17A27D47A33008875FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F7F18027D47A8C008875FC /* TimelineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRow.swift; sourceTree = "<group>"; };
+		13F7F18227D47A9C008875FC /* TimelineRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineRow.xib; sourceTree = "<group>"; };
+		13F7F18427D47EB6008875FC /* TimelineStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineStack.swift; sourceTree = "<group>"; };
+		13F7F18627D47EC4008875FC /* TimelineStack.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineStack.xib; sourceTree = "<group>"; };
+		13F7F18827D47F64008875FC /* TimelineRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRowModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				13F7F17527D47A33008875FC /* Assets.xcassets */,
 				13F7F17727D47A33008875FC /* LaunchScreen.storyboard */,
 				13F7F17A27D47A33008875FC /* Info.plist */,
+				13F7F18027D47A8C008875FC /* TimelineRow.swift */,
+				13F7F18427D47EB6008875FC /* TimelineStack.swift */,
+				13F7F18827D47F64008875FC /* TimelineRowModel.swift */,
+				13F7F18627D47EC4008875FC /* TimelineStack.xib */,
+				13F7F18227D47A9C008875FC /* TimelineRow.xib */,
 			);
 			path = VerticalTimelineView;
 			sourceTree = "<group>";
@@ -126,8 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F7F17927D47A33008875FC /* LaunchScreen.storyboard in Resources */,
+				13F7F18727D47EC4008875FC /* TimelineStack.xib in Resources */,
 				13F7F17627D47A33008875FC /* Assets.xcassets in Resources */,
 				13F7F17427D47A32008875FC /* Main.storyboard in Resources */,
+				13F7F18327D47A9C008875FC /* TimelineRow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +157,10 @@
 			files = (
 				13F7F17127D47A32008875FC /* ViewController.swift in Sources */,
 				13F7F16D27D47A32008875FC /* AppDelegate.swift in Sources */,
+				13F7F18527D47EB6008875FC /* TimelineStack.swift in Sources */,
 				13F7F16F27D47A32008875FC /* SceneDelegate.swift in Sources */,
+				13F7F18127D47A8C008875FC /* TimelineRow.swift in Sources */,
+				13F7F18927D47F64008875FC /* TimelineRowModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
