@@ -5,7 +5,7 @@
 </h2>
 
 ## Overview
-`VerticalTimelineView` is an app to demonstrate how to create a progress widget with vertical timeline.
+`VerticalTimelineView` is an iOS app to demonstrate how to create a progress widget with a vertical timeline. It has been written purely in Swift and does not use any third-party libraries.
 
 ## Demo
 <h2 align="center">
